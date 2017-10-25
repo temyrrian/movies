@@ -1,0 +1,3 @@
+<app-movie-item *ngFor="let movie of movies" [movie]="movie"
+                (saveToWatchList)="saveToWatchList($event)" (delete)="deleteFromWatchList($event)">
+</app-movie-item>

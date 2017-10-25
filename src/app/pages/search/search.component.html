@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-form-field>
+    <input [formControl]="control" matInput placeholder="Search movies">
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+</mat-card>
+
+<div class="movie-item-container">
+  <app-movie-item *ngFor="let movie of movies" [movie]="movie"
+                  (saveToWatchList)="saveToWatchList($event)" (delete)="deleteFromWatchList($event)">
+  </app-movie-item>
+</div>

@@ -1,0 +1,48 @@
+:host {
+  display: inline-block;
+}
+
+.mat-card {
+  width: 350px;
+  height: 500px;
+
+  margin: 20px;
+  padding: 20px 10px;
+
+  overflow: hidden;
+
+  .mat-card-title {
+    font-weight: 600;
+  }
+
+  .mat-card-subtitle {
+    font-size: 12px;
+  }
+
+  img {
+    width: 200px;
+    height: 300px;
+
+    margin: 0 auto;
+  }
+
+  .mat-card-content {
+    display: flex;
+
+    flex-direction: column;
+
+    p {
+      height: 85px;
+
+      text-align: justify;
+      overflow: hidden;
+    }
+  }
+
+  .mat-card-actions {
+    button{
+      font-weight: 800;
+    }
+  }
+  background-color: #fff;
+}

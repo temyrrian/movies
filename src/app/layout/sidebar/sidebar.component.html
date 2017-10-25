@@ -1,0 +1,16 @@
+<div class="menu-container">
+  <div class="menu-item" routerLink="/popular"  [class.active]="router.isActive('/popular')"  routerLinkActive="/popular">
+    <mat-icon>star</mat-icon>
+    <span>Popular</span>
+  </div>
+
+  <div class="menu-item" [class.active]="router.isActive('/watchlist')" routerLink="/watchlist" routerLinkActive="/watchlist">
+    <mat-icon>list</mat-icon>
+    <span>Watchlist</span>
+  </div>
+
+  <div class="menu-item" routerLink="/search" [class.active]="router.isActive('/search')" routerLinkActive="/search">
+    <mat-icon>search</mat-icon>
+    <span>Search</span>
+  </div>
+</div>

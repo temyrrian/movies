@@ -1,0 +1,10 @@
+:host {
+  display: flex;
+  flex-direction: row;
+
+  height: 100vh;
+
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}

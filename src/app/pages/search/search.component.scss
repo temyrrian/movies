@@ -1,0 +1,14 @@
+.mat-card {
+  display: flex;
+
+  flex-direction: row-reverse;
+
+  background-color: #54d4da;
+}
+
+.movie-item-container {
+  display: flex;
+
+  flex-flow: wrap;
+  justify-content: center;
+}

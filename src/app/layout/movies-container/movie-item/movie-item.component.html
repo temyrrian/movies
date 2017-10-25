@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{movie.title}}</mat-card-title>
+    <mat-card-subtitle>Rate {{movie.vote_average}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <img mat-card-image src="{{movieDbService.getPosterUrl(movie.poster_path)}}" alt="Poster not loaded">
+      <p>
+        {{movie.overview}}
+      </p>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button (click)="saveMovieIntoToDo()" *ngIf="!isSaved()">Add to watchlist</button>
+    <button mat-button (click)="deleteMovieFromToDo()" *ngIf="isSaved()">Remove from watchlist</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
+
